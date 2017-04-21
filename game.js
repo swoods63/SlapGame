@@ -1,4 +1,6 @@
-var cats = [{
+
+/*var cats = [{
+
   id: 247,
   name: "Mr. Fluffy",
   imgUrl: "https://acm202.files.wordpress.com/2016/09/cats-politics-tn.jpg",
@@ -81,4 +83,4 @@ function drawCats(listOfCats) {
   }
   document.getElementById("cat-list").innerHTML = template
 }
-drawCats(cats)
+drawCats(cats)//
