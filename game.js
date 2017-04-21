@@ -1,4 +1,32 @@
 
+var health = 100;
+
+function slap() {
+  health = health - 1
+  alert(health)
+}
+function punch() {
+  health = health - 5
+
+  alert(health)
+}
+function kick() {
+  health = health - 10
+
+  alert(health)
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*var cats = [{
 
   id: 247,
@@ -83,4 +111,4 @@ function drawCats(listOfCats) {
   }
   document.getElementById("cat-list").innerHTML = template
 }
-drawCats(cats)//
+drawCats(cats)*/

@@ -5,7 +5,7 @@ Students will use javascript in order to interact with the DOM to create a dynam
 
 //### Step 1 - GIT - Project Initialization
 
-1. Create a git repository named SlapGame
+//1. Create a git repository named SlapGame
 2. Create the file index.html and a script file called game.js and a css file name game.css.
 3. Commit changes and push them back to GitHub.
 
