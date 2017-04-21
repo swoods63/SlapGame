@@ -1,9 +1,9 @@
-## The Slap Game - Part 1 (10pts)
+//## The Slap Game - Part 1 (10pts)
 
-#### Objective:
+//#### Objective:
 Students will use javascript in order to interact with the DOM to create a dynamic webpage.
 
-### Step 1 - GIT - Project Initialization
+//### Step 1 - GIT - Project Initialization
 
 1. Create a git repository named SlapGame
 2. Create the file index.html and a script file called game.js and a css file name game.css.
