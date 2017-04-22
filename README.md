@@ -9,7 +9,7 @@ Students will use javascript in order to interact with the DOM to create a dynam
 2. Create the file index.html and a script file called game.js and a css file name game.css.
 3. Commit changes and push them back to GitHub.
 
-### Step 2 - HTML - Create page layout and Slap button (2pts)
+//### Step 2 - HTML - Create page layout and Slap button (2pts)
 
 1. Link Bootstrap game.js and game.css to index.html.
 2. Add an image to the body with a width of 200px this is your "target"
