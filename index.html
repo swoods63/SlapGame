@@ -1,30 +1,101 @@
+<!DOCTYPE html>
 <html>
 
 <head>
 	<title>Slap Object Game</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
 	<link rel="stylesheet" href="game.css">
 
 </head>
 
 <body>
-	<div class="happy">
-	<img src="https://us.123rf.com/450wm/tigatelu/tigatelu1305/tigatelu130500023/19583322-happy-smiley-cartoon.jpg?ver=6" alt="smily face">
+
+	<div class="ui container">
+		<div class="ui grid">
+			<div class="six wide column">
+				<div class="happy">
+					<img id="target" class="target" src="https://us.123rf.com/450wm/tigatelu/tigatelu1305/tigatelu130500023/19583322-happy-smiley-cartoon.jpg?ver=6"
+					 alt="smily face">
+				</div>
+			</div>
+			<div class="four wide column">
+				<div class="ui three horizontal statistics">
+					<div class="ui statistic">
+						<div class="value" id="health">
+
+						</div>
+						<div class="label">
+							Health
+						</div>
+					</div>
+					<div class="ui statistic">
+						<div class="value" id="name">
+							NAme
+						</div>
+						
+					</div>
+					<div class="ui statistic">
+						<div class="value" id="hits">
+							0
+						</div>
+						<div class="label">
+							hits
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="six wide column">
+				<div class="angry">
+					<img src="https://s-media-cache-ak0.pinimg.com/200x150/ca/bb/5f/cabb5f7bb590d975bd0f9aeb2ab20187.jpg" alt="angry face">
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="really angry">
+
+			<img src="" alt="">
+		</div>
+		<footer class="ui three column grid">
+			<div class="column">
+				<div class="ui labeled button" onclick="slap()">
+					<div class="ui green button">
+						slap
+					</div>
+					<div class="ui basic green left pointing label">
+						1
+					</div>
+				</div>
+			</div>
+			<div class="column">
+
+
+				<div class="ui labeled button" onclick="punch()">
+					<div class="ui blue button">
+						punch
+					</div>
+					<div class="ui basic blue left pointing label">
+						5
+					</div>
+				</div>
+
+			</div>
+
+			<div class="column">
+				<div class="ui labeled button" onclick="kick()">
+					<div class="ui red button">
+						KICK
+					</div>
+					<div class="ui basic red left pointing label">
+						10
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
-
-	<div class="angry">
-		<img src="https://s-media-cache-ak0.pinimg.com/200x150/ca/bb/5f/cabb5f7bb590d975bd0f9aeb2ab20187.jpg" alt="angry face">
-	</div>
-	<div class="really angry">
-	 
-		<img src="" alt="">
-	</div>
-
- <button type="button" id="slap" onclick="slap()">SLAP</button>
- <button type="button" id="punch" onclick="punch()">PUNCH</button>
- <button type="button" id="kick" onclick="kick()">KICK</button>
-
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
 	<script src="game.js"></script>
 </body>
 

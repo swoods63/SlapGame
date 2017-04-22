@@ -1,114 +1,67 @@
 
+
 var health = 100;
+var name = "Rocky";
+var hits = 0;
+var healthWire = document.getElementById("health");
+var hitsWire = document.getElementById("hits");
+var nameWire = document.getElementById("name");
 
+//update function
+function update() {
+   if (health < 0) {
+      health = 0;
+  }
+  healthWire.innerHTML = health;
+  hitsWire.innerHTML = hits;
+
+}
+//this function changes health
 function slap() {
-  health = health - 1
-  alert(health)
-}
+  if (health > 0) {
+    health = health - 1;
+    hits++;
+    $("#target").transition('shake');
+    update();
+  }
+};
 function punch() {
-  health = health - 5
+  
+    health = health - 5;
+    hits++;
 
-  alert(health)
-}
+    $("#target").transition('pulse');
+   
+  update();
+  // alert(health) //This let you check your code//
+};
+
 function kick() {
-  health = health - 10
-
-  alert(health)
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*var cats = [{
-
-  id: 247,
-  name: "Mr. Fluffy",
-  imgUrl: "https://acm202.files.wordpress.com/2016/09/cats-politics-tn.jpg",
-  happyStatus: "Purrrrrr",
-  grumpyStatus: "rawrrrr",
-  feralStatus: "hhhissssss!!",
-  goneStatus: "Mr Fluffy has left for his meeting",
-  petCount: 0
-}]
-
-function petCat(catId) {
-  var petCount = document.getElementById("petCount"+catId) //creating an alias!
-  var catStatus = document.getElementById("catStatus"+catId)
-  var catButton = document.getElementById("catButton"+catId)
-  var catPic = document.getElementById("catPic"+catId) //doc.stuff ref to html
-
-  var targetCat = getCatById(catId)
-
-
-
-  targetCat.petCount++
-  petCount.innerHTML = targetCat.petCount
-  if (targetCat.petCount > 5) {
-    catStatus.innerHTML = targetCat.grumpyStatus
+  if (health > 0){
+  health = health - 10;
+  hits++;
+  $("#target").transition('bounce');
+  update();
   }
-  if (targetCat.petCount == 9) {
-    catStatus.innerHTML = targetCat.feralStatus
-  }
-  if (targetCat.petCount == 10) {
-    catStatus.innerHTML = targetCat.goneStatus
-    catButton.disabled = true
-    catPic.src = ""
-  }
-}
+};
+update();
+nameWire.innerHTML = name;
 
-function getCatById(catId){
 
-  for (var i = 0; i < cats.length; i++) {
-    var cat = cats[i];
-    
-    if(cat.id == catId){
-      return cat
-    }
 
-  }
 
-}
+// beat up
+// https://cdn.pixabay.com/photo/2013/07/12/16/24/smiley-150838_960_720.png
 
-function kittyBack(catId) {
-  var petCount = document.getElementById("petCount"+catId) //creating an alias!
-  var catStatus = document.getElementById("catStatus"+catId)
-  var catButton = document.getElementById("catButton"+catId)
-  var catPic = document.getElementById("catPic"+catId) //doc.stuff ref to html
-  var targetCat = getCatById(catId)
-  targetCat.petCount = 0
-  petCount.innerHTML = targetCat.petCount
-  catButton.disabled = false
-  catStatus.innerHTML = targetCat.happyStatus
-  catPic.src = targetCat.imgUrl
-}
 
-function drawCats(listOfCats) {
-  var template = ""
-  for (var i = 0; i < listOfCats.length; i++) {
-    var cat = listOfCats[i]
-    template += `
-    <div>
-      <img id="catPic${cat.id}" src="${cat.imgUrl}" alt="meow">
-      <button 
-        type="button" 
-        id="catButton${cat.id}" 
-        onclick="petCat(${cat.id})">
-          pet 
-      </button>
-      <button type="button" onclick="kittyBack(${cat.id})">Kitty! Come back!!!</button>
-      <h1 id="petCount${cat.id}">${cat.petCount}</h1>
-      <h2 id="catStatus${cat.id}">${cat.happyStatus}</h2>
-    </div>
-    `
-  }
-  document.getElementById("cat-list").innerHTML = template
-}
-drawCats(cats)*/
+
+
+
+
+
+
+
+
+
+
+

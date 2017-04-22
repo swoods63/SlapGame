@@ -15,7 +15,7 @@ Students will use javascript in order to interact with the DOM to create a dynam
 2. Add an image to the body with a width of 200px this is your "target"
 3. Add a button to the footer with the text "Slap"
 
-### Step 3 - JS - Declare variables and write the Slap function (2pts)
+/### Step 3 - JS - Declare variables and write the Slap function (2pts)
 
 1. Create a global variable: var health=100;
 2. Create a function: slap()
