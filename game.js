@@ -26,15 +26,14 @@ function slap() {
   }
 };
 function punch() {
-  
+  if (health > 0) {
     health = health - 5;
     hits++;
-
     $("#target").transition('pulse');
-   
   update();
-  // alert(health) //This let you check your code//
+  }
 };
+  // alert(health) //This let you check your code//
 
 function kick() {
   if (health > 0){
