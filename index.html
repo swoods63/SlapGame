@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 
 <head>
 	<title>Slap Object Game</title>
@@ -12,7 +12,7 @@
 
 <body>
 	<div class="container-fluid">
-		<div style="text-align:center;border:20px solid white">
+		<div style="text-align:center;border:20px solid black">
 			<h1>The <span style="color:red">SLAP</span> Game</h1>
 		</div>
 	</div>
@@ -26,27 +26,27 @@
 
 			</div>
 			<div class="four wide column">
-				<div class="ui three horizontal statistics">
+				<div class="ui three inverted horizontal statistics">
 					<div class="ui statistic">
 						<div class="value" id="health">
 
 						</div>
 						<div class="label">
-							Health
+							<span>Health</span>
 						</div>
 					</div>
 					<div class="ui statistic">
 						<div class="value" id="name">
-							NAme
+						<span>Name</span>
 						</div>
 
 					</div>
 					<div class="ui statistic">
 						<div class="value" id="hits">
-							0
+						<span>0</span>
 						</div>
 						<div class="label">
-							hits
+						<span>hits</span>
 						</div>
 					</div>
 				</div>
@@ -56,12 +56,24 @@
 			</div>
 		</div>
 
+	<div class="ui three column grid" id="items">
 
+	<div class="ui button column" onclick="app.addItems(items.shield)" id="shield">
+		Shield
+	</div>
+		<div class="ui button column"onclick="app.addItems(items.stick)" id="stick">
+		Stick
+	</div>
+		<div class="ui button column"onclick="app.addItems(items.knife)" id="knife">
+Knife
+	</div>
+			
+		</div>
 		<footer class="ui three column grid">
 			<div class="column">
-				<div class="ui labeled button" onclick="slap()">
-					<div class="ui green button">
-						slap
+				<div class="massive ui inverted labeled button" onclick=" app.slap()">
+					<div class="massive ui green button">
+						<span>slap</span>
 					</div>
 					<div class="ui basic green left pointing label">
 						1
@@ -71,24 +83,24 @@
 			<div class="column">
 
 
-				<div class="ui labeled button" onclick="punch()">
-					<div class="ui blue button">
+				<div class="massive ui labeled button" onclick="app.punch()">
+					<div class="massive ui blue button">
 						punch
 					</div>
-					<div class="ui basic blue left pointing label">
-						5
+					<div class="ui basic left pointing  blue label">
+					5
 					</div>
 				</div>
 
 			</div>
 
 			<div class="column">
-				<div class="ui labeled button" onclick="kick()">
-					<div class="ui red button">
-						KICK
+				<div class="massive ui labeled button" onclick="app.kick()">
+					<div class="massive ui red button">
+					KICK
 					</div>
 					<div class="ui basic red left pointing label">
-						10
+					10
 					</div>
 				</div>
 			</div>
@@ -96,7 +108,10 @@
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.js"></script>
+		<script src="gameServices.js"></script>
+			<script src="gameController.js"></script>
 	<script src="game.js"></script>
+
 </body>
 
 </html>

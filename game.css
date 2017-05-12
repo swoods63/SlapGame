@@ -1,5 +1,15 @@
 /*Only use this file if you want to override bootstrap or create your own style*/
 .target{
-  width: 200px;
-  
+  width: 400px;  
+}
+
+body{
+  background-image: url(http://cdn.wallpapersafari.com/11/62/zyct4b.jpg);
+  background-size: cover;
+}
+h1 {
+  color: white;
+}
+span{
+  color: white
 }
